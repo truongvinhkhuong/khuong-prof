@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from 'next-themes'
+import { StarsBackground } from '@/components/animate-ui/components/backgrounds/stars'
 
 export const metadata: Metadata = {
   title: 'Khuong Truong - Portfolio',
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
+        <StarsBackground />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

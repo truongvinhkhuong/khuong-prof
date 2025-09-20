@@ -11,10 +11,10 @@ interface StarsBackgroundProps {
 }
 
 export const StarsBackground = ({ 
-  starColor = '#FFF', 
+  starColor = '#499eab', 
   className,
-  starCount = 400,
-  speed = 0.8
+  starCount = 500,
+  speed = 1
 }: StarsBackgroundProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -37,7 +37,7 @@ export const StarsBackground = ({
     const stars = Array.from({ length: starCount }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      radius: Math.random() * 1.5 + 0.3, // Smaller, more varied sizes
+      radius: Math.random() * 2.5 + 0.8, // Larger, more varied sizes
       vx: (Math.random() - 0.5) * 0.2 * speed,
       vy: (Math.random() - 0.5) * 0.2 * speed,
       opacity: Math.random() * 0.9 + 0.1, // More varied opacity
@@ -72,7 +72,7 @@ export const StarsBackground = ({
         // Draw star with no shadow for cleaner look
         ctx.save();
         ctx.globalAlpha = currentOpacity;
-        ctx.fillStyle = '#FFFFFF'; // Pure white stars
+        ctx.fillStyle = '#499eab'; // Custom star color
         
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
@@ -95,7 +95,7 @@ export const StarsBackground = ({
     <canvas
       ref={canvasRef}
       className={cn(
-        "absolute inset-0 w-full h-full bg-black",
+        "fixed inset-0 w-full h-full bg-black z-0",
         className
       )}
     />
