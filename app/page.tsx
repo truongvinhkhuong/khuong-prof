@@ -366,44 +366,193 @@ export default function Portfolio() {
               viewport={{ once: true }}
               className="relative"
             >
-              {/* Floating cards */}
+              {/* Enhanced Floating cards */}
               <motion.div
-                animate={{ y: [0, -20, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-0 right-0 bg-gradient-to-br from-[#00aaaa] to-[#0088aa] p-6 rounded-2xl shadow-2xl"
+                animate={{ 
+                  y: [0, -25, 0],
+                  rotate: [0, 2, 0],
+                  scale: [1, 1.02, 1]
+                }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                whileHover={{ 
+                  scale: 1.1, 
+                  rotate: 5,
+                  y: -30,
+                  transition: { duration: 0.3 }
+                }}
+                className="absolute top-0 right-0 group cursor-pointer"
               >
-                <div className="text-white">
-                  <div className="text-2xl font-bold mb-2">Frontend</div>
-                  <div className="text-sm opacity-90">React, Vue, Next.js</div>
+                <div className="relative">
+                  {/* Glow effect */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-[#00aaaa] via-[#00cccc] to-[#00aaaa] rounded-3xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Card content */}
+                  <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 shadow-2xl">
+                    {/* Animated background pattern */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#00aaaa]/20 via-transparent to-[#00cccc]/20 rounded-3xl opacity-50"></div>
+                    
+                    {/* Floating particles */}
+                    <div className="absolute top-2 right-2 w-2 h-2 bg-[#00aaaa] rounded-full animate-pulse"></div>
+                    <div className="absolute bottom-4 left-3 w-1 h-1 bg-[#00cccc] rounded-full animate-ping"></div>
+                    
+                    <div className="relative text-white">
+                      <div className="flex items-center mb-3">
+                        <div className="w-8 h-8 bg-gradient-to-br from-[#00aaaa] to-[#00cccc] rounded-lg flex items-center justify-center mr-3">
+                          <span className="text-sm">⚛️</span>
+                        </div>
+                        <div className="text-2xl font-bold">Frontend</div>
+                      </div>
+                      <div className="text-sm opacity-90 pl-11">React, Vue, Next.js</div>
+                      <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-[#00aaaa]/30 to-transparent rounded-tl-3xl"></div>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
 
               <motion.div
-                animate={{ y: [0, 20, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-                className="absolute top-32 left-0 bg-gradient-to-br from-purple-500 to-pink-500 p-6 rounded-2xl shadow-2xl"
+                animate={{ 
+                  y: [0, 25, 0],
+                  rotate: [0, -2, 0],
+                  scale: [1, 1.02, 1]
+                }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                whileHover={{ 
+                  scale: 1.1, 
+                  rotate: -5,
+                  y: 30,
+                  transition: { duration: 0.3 }
+                }}
+                className="absolute top-32 left-0 group cursor-pointer"
               >
-                <div className="text-white">
-                  <div className="text-2xl font-bold mb-2">Backend</div>
-                  <div className="text-sm opacity-90">Spring, Flask, Node.js</div>
+                <div className="relative">
+                  {/* Glow effect */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 rounded-3xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Card content */}
+                  <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 shadow-2xl">
+                    {/* Animated background pattern */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-transparent to-pink-500/20 rounded-3xl opacity-50"></div>
+                    
+                    {/* Floating particles */}
+                    <div className="absolute top-3 left-2 w-1.5 h-1.5 bg-purple-400 rounded-full animate-bounce"></div>
+                    <div className="absolute bottom-2 right-4 w-1 h-1 bg-pink-400 rounded-full animate-pulse"></div>
+                    
+                    <div className="relative text-white">
+                      <div className="flex items-center mb-3">
+                        <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-3">
+                          <span className="text-sm">⚙️</span>
+                        </div>
+                        <div className="text-2xl font-bold">Backend</div>
+                      </div>
+                      <div className="text-sm opacity-90 pl-11">Spring, Flask, Node.js</div>
+                      <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-purple-500/30 to-transparent rounded-tl-3xl"></div>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
 
               <motion.div
-                animate={{ y: [0, -15, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 4 }}
-                className="absolute bottom-0 right-1/4 bg-gradient-to-br from-green-500 to-teal-500 p-6 rounded-2xl shadow-2xl"
+                animate={{ 
+                  y: [0, -20, 0],
+                  rotate: [0, 1, 0],
+                  scale: [1, 1.02, 1]
+                }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 4 }}
+                whileHover={{ 
+                  scale: 1.1, 
+                  rotate: 3,
+                  y: -25,
+                  transition: { duration: 0.3 }
+                }}
+                className="absolute bottom-0 right-1/4 group cursor-pointer"
               >
-                <div className="text-white">
-                  <div className="text-2xl font-bold mb-2">DevOps</div>
-                  <div className="text-sm opacity-90">Docker, CI/CD</div>
+                <div className="relative">
+                  {/* Glow effect */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-teal-400 to-green-400 rounded-3xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Card content */}
+                  <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 shadow-2xl">
+                    {/* Animated background pattern */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-green-400/20 via-transparent to-teal-400/20 rounded-3xl opacity-50"></div>
+                    
+                    {/* Floating particles */}
+                    <div className="absolute top-4 left-3 w-2 h-2 bg-green-400 rounded-full animate-ping"></div>
+                    <div className="absolute bottom-3 right-2 w-1 h-1 bg-teal-400 rounded-full animate-bounce"></div>
+                    
+                    <div className="relative text-white">
+                      <div className="flex items-center mb-3">
+                        <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-teal-400 rounded-lg flex items-center justify-center mr-3">
+                          <span className="text-sm">🚀</span>
+                        </div>
+                        <div className="text-2xl font-bold">DevOps</div>
+                      </div>
+                      <div className="text-sm opacity-90 pl-11">Docker, CI/CD</div>
+                      <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-green-400/30 to-transparent rounded-tl-3xl"></div>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
 
-              {/* Central profile image placeholder */}
-              <div className="w-64 h-64 mx-auto bg-gradient-to-br from-[#00aaaa]/20 to-purple-500/20 rounded-full flex items-center justify-center backdrop-blur-md border border-white/10">
-                <div className="text-6xl">👨‍💻</div>
-              </div>
+              {/* Enhanced Central profile image */}
+              <motion.div
+                animate={{ 
+                  scale: [1, 1.05, 1],
+                  rotate: [0, 1, 0]
+                }}
+                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                className="relative w-64 h-64 mx-auto"
+              >
+                {/* Outer glow ring */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-[#00aaaa]/30 via-transparent to-purple-500/30 rounded-full blur-xl"></div>
+                
+                {/* Profile container */}
+                <div className="relative w-full h-full bg-gradient-to-br from-[#00aaaa]/20 to-purple-500/20 rounded-full flex items-center justify-center backdrop-blur-xl border-2 border-white/20 shadow-2xl">
+                  {/* Animated background circles */}
+                  <div className="absolute inset-4 bg-gradient-to-br from-[#00aaaa]/10 to-purple-500/10 rounded-full animate-pulse"></div>
+                  
+                  {/* Floating mini icons around profile */}
+                  <motion.div
+                    animate={{ 
+                      rotate: 360,
+                      scale: [0.8, 1.2, 0.8]
+                    }}
+                    transition={{ 
+                      duration: 20, 
+                      repeat: Infinity, 
+                      ease: "linear" 
+                    }}
+                    className="absolute inset-0"
+                  >
+                    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-lg">💻</div>
+                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-lg">⚡</div>
+                    <div className="absolute left-2 top-1/2 transform -translate-y-1/2 text-lg">🎯</div>
+                    <div className="absolute right-2 top-1/2 transform -translate-y-1/2 text-lg">🔥</div>
+                  </motion.div>
+                  
+                  {/* Main profile emoji */}
+                  <motion.div 
+                    animate={{ 
+                      y: [0, -5, 0],
+                      scale: [1, 1.1, 1]
+                    }}
+                    transition={{ 
+                      duration: 4, 
+                      repeat: Infinity, 
+                      ease: "easeInOut" 
+                    }}
+                    className="text-6xl relative z-10"
+                  >
+                    👨‍💻
+                  </motion.div>
+                </div>
+                
+                {/* Floating connection lines */}
+                <motion.div
+                  animate={{ opacity: [0.3, 0.8, 0.3] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute inset-0 border border-[#00aaaa]/30 rounded-full"
+                ></motion.div>
+              </motion.div>
             </motion.div>
           </div>
         </div>
