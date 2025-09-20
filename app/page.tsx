@@ -182,16 +182,12 @@ export default function Portfolio() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="mb-8"
           >
-            <motion.h1
+            <motion.h3
               className="text-6xl md:text-8xl lg:text-9xl font-bold mb-4 gradient-text"
             >
-              Hi, I'm
-            </motion.h1>
-            <motion.h1
-              className="text-6xl md:text-8xl lg:text-9xl font-bold gradient-text"
-            >
-              Khuong
-            </motion.h1>
+              Hi, I'm Khuong
+            </motion.h3>
+           
           </motion.div>
 
           {/* Subtitle with enhanced typewriter */}
@@ -202,10 +198,10 @@ export default function Portfolio() {
             className="mb-12"
           >
             <div className="text-2xl md:text-3xl lg:text-4xl text-gray-300 mb-4">
-              <TypewriterText text="Full-Stack Developer" delay={1000} />
+              <TypewriterText text="Full-Stack Developer" delay={20} />
             </div>
             <div className="text-lg md:text-xl text-gray-400">
-              <TypewriterText text="& Automation Enthusiast" delay={2500} />
+              <TypewriterText text="& Automation Enthusiast" delay={20} />
             </div>
           </motion.div>
 

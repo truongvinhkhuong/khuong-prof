@@ -4,7 +4,7 @@ import { ThemeProvider } from 'next-themes'
 import { StarsBackground } from '@/components/animate-ui/components/backgrounds/stars'
 
 export const metadata: Metadata = {
-  title: 'Khuong Truong - Portfolio',
+  title: 'Vinh Khuong Truong',
   description: 'Aspiring Developer & Automation Enthusiast',
 }
 
