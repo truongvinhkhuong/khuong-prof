@@ -31,13 +31,18 @@ import {
   SiPostgresql,
   SiRedis,
   SiGithubactions,
-  SiJira,
+  SiNestjs,
+  SiReact,
+  SiNextdotjs,
 } from "react-icons/si"
 
 const techStackData = [
   { name: "Spring", icon: SiSpring },
   { name: "Java", icon: FaJava },
   { name: "Vue.js", icon: FaVuejs },
+  { name: "React", icon: SiReact },
+  { name: "Next.js", icon: SiNextdotjs },
+  { name: "NestJS", icon: SiNestjs },
   { name: "Vite", icon: SiVite },
   { name: "Flask", icon: SiFlask },
   { name: "Python", icon: FaPython },
@@ -52,12 +57,10 @@ const techStackData = [
   { name: "MySQL", icon: SiMysql },
   { name: "Postgres", icon: SiPostgresql },
   { name: "Redis", icon: SiRedis },
-  { name: "Figma", icon: FaFigma },
   { name: "GitHub", icon: FaGithub },
   { name: "Git", icon: FaGitAlt },
   { name: "GitHub Actions", icon: SiGithubactions },
   { name: "Docker", icon: FaDocker },
-  { name: "Jira", icon: SiJira },
 ]
 
 const TypewriterText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
