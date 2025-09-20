@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Test</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e1e2e 0%, #2d1b69 50%, #1e1e2e 100%);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .test-section {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h1, h2 {
+            color: #00aaaa;
+        }
+        
+        /* Import animations from our CSS file */
+        @import url('./app/animations.css');
+        
+        .test-item {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🎨 Animation Test Page</h1>
+        <p>This page tests all the animations and effects used in the portfolio.</p>
+        
+        <div class="test-section">
+            <h2>Gradient Text Animation</h2>
+            <div class="test-item">
+                <h3 class="gradient-text">This text should have a shifting gradient animation</h3>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Glass Morphism Effect</h2>
+            <div class="test-item">
+                <div class="glass-morphism" style="padding: 20px; border-radius: 15px;">
+                    <p>This should have a glass morphism effect with backdrop blur</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Neon Glow Effect</h2>
+            <div class="test-item">
+                <div class="neon-glow" style="padding: 20px; border-radius: 15px; display: inline-block;">
+                    <p>This should have a pulsing neon glow</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Floating Animation</h2>
+            <div class="test-item">
+                <div class="float-animation" style="padding: 20px; background: #00aaaa; border-radius: 15px; display: inline-block;">
+                    <p>This should float up and down</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Hover Effects</h2>
+            <div class="test-item">
+                <div class="hover-lift" style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; display: inline-block; cursor: pointer;">
+                    <p>Hover over this to see lift effect</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Button Animation</h2>
+            <div class="test-item">
+                <button class="btn-primary" style="padding: 15px 30px; border: none; border-radius: 10px; color: white; font-size: 16px;">
+                    Hover for shimmer effect
+                </button>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Card Hover Effect</h2>
+            <div class="test-item">
+                <div class="card-hover" style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; display: inline-block; cursor: pointer;">
+                    <p>Hover over this card</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Responsive Text</h2>
+            <div class="test-item">
+                <p class="text-responsive">This text should be responsive</p>
+                <p class="text-responsive-lg">This large text should be responsive</p>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Scrollbar Test</h2>
+            <div class="test-item" style="height: 200px; overflow-y: auto;">
+                <p>Scroll to see custom scrollbar:</p>
+                <p>Line 1</p><p>Line 2</p><p>Line 3</p><p>Line 4</p><p>Line 5</p>
+                <p>Line 6</p><p>Line 7</p><p>Line 8</p><p>Line 9</p><p>Line 10</p>
+                <p>Line 11</p><p>Line 12</p><p>Line 13</p><p>Line 14</p><p>Line 15</p>
+                <p>Line 16</p><p>Line 17</p><p>Line 18</p><p>Line 19</p><p>Line 20</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Test if animations are working
+        console.log('🎨 Animation test page loaded');
+        
+        // Add some interactive testing
+        document.querySelectorAll('.test-item').forEach((item, index) => {
+            item.addEventListener('click', () => {
+                console.log(`Clicked test item ${index + 1}`);
+            });
+        });
+    </script>
+</body>
+</html>
