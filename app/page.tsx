@@ -268,7 +268,7 @@ export default function Portfolio() {
             </motion.a>
 
             <motion.a
-              href="https://github.com/khuong2924"
+              href="https://github.com/truongvinhkhuong"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, y: -5, rotate: 5 }}
@@ -946,7 +946,7 @@ export default function Portfolio() {
                   <FaLinkedin className="w-5 h-5 text-white hover:text-[#0077b5] transition-colors" />
                 </motion.a>
                 <motion.a
-                  href="https://github.com/your-username"
+                  href="https://github.com/truongvinhkhuong"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, y: -2 }}
@@ -972,9 +972,9 @@ export default function Portfolio() {
             <div>
               <h4 className="text-white font-semibold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>📧 khuong@example.com</li>
-                <li>📱 +84 xxx xxx xxx</li>
-                <li>📍 Vietnam</li>
+                <li>trvinhkhuong@gmail.com</li>
+                <li>+84 867 084 729</li>
+                <li>Ho Chi Minh City, Vietnam</li>
               </ul>
             </div>
           </div>
@@ -982,7 +982,7 @@ export default function Portfolio() {
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-white/10 text-center">
             <p className="text-gray-400">
-              © 2025 Khuong Truong. Built with ❤️ using Next.js, TypeScript & Tailwind CSS.
+              © 2025 Khuong Truong.
             </p>
           </div>
         </div>
