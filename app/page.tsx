@@ -198,10 +198,10 @@ export default function Portfolio() {
             className="mb-12"
           >
             <div className="text-2xl md:text-3xl lg:text-4xl text-gray-300 mb-4">
-              <TypewriterText text="Full-Stack Developer" delay={20} />
+              <TypewriterText text="Full-Stack Developer" delay={10} />
             </div>
             <div className="text-lg md:text-xl text-gray-400">
-              <TypewriterText text="& Automation Enthusiast" delay={20} />
+              <TypewriterText text="& Automation Enthusiast" delay={10} />
             </div>
           </motion.div>
 
@@ -278,8 +278,6 @@ export default function Portfolio() {
               <FaGithub className="w-6 h-6 text-white group-hover:text-[#00aaaa] transition-colors" />
             </motion.a>
           </motion.div>
-
-          
         </div>
       </section>
 
@@ -549,6 +547,8 @@ export default function Portfolio() {
                   className="absolute inset-0 border border-[#00aaaa]/30 rounded-full"
                 ></motion.div>
               </motion.div>
+
+
             </motion.div>
           </div>
         </div>
@@ -833,7 +833,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-white font-semibold">Email</div>
-                    <div className="text-gray-400">khuong@example.com</div>
+                    <div className="text-gray-400">trvinhkhuong@gmail.com</div>
                   </div>
                 </div>
 
@@ -843,7 +843,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-white font-semibold">Phone</div>
-                    <div className="text-gray-400">+84 xxx xxx xxx</div>
+                    <div className="text-gray-400">+84 867 084 729</div>
                   </div>
                 </div>
 
@@ -853,7 +853,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-white font-semibold">Location</div>
-                    <div className="text-gray-400">Vietnam</div>
+                    <div className="text-gray-400">Ho Chi Minh City, Vietnam</div>
                   </div>
                 </div>
               </motion.div>
